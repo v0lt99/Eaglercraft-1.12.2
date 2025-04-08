@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Eaglercraft 1.12 test directory HTML page" />
-		<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.12, 1.12.2" />
-		<title>Eaglercraft 1.12</title>
+		<meta name="description" content="sachécraft b1.1 test directory HTML page" />
+		<meta name="keywords" content="sachécraft, sachécraft, sachécraft, b1.1, b1.1-1" />
+		<title>Sachecraft b1.1</title>
 		<meta property="og:locale" content="en-US" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Eaglercraft 1.12" />
+		<meta property="og:title" content="sachécraft b1.1" />
 		<meta property="og:description" content="test directory HTML page" />
 		<link type="image/png" rel="shortcut icon" href="favicon.png" />
 		<script type="text/javascript" src="ModAPI.js"></script>
@@ -23,7 +23,7 @@
 					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				}else {
 					const relayId = Math.floor(Math.random() * 3);
-					window.eaglercraftXOpts = {
+					window.sachécraftXOpts = {
 						demoMode: false,
 						container: "game_frame",
 						assetsURI: "assets.epk",
@@ -34,9 +34,10 @@
 							{ addr: "ws://localhost:8081/", name: "Local test server" }
 						],
 						relays: [
-							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId == 0 },
-							{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId == 1 },
-							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId == 2 }
+							{ addr: "wss://relay.volt.dev/", comment: "lax1dude relay #1", primary: relayId == 3 },
+							{ addr: "wss://relay.voldiagon.net/", comment: "lax1dude relay #2", primary: relayId == 4 },
+							{ addr: "wss://relay.isitvoldiag.on/", comment: "ayunami relay #1", primary: relayId == 6 }
+							{ addr: "wss://relay.subtovo.lt/", comment: "ayunami relay #1", primary: relayId == 9 }
 						]
 					};
 					
@@ -44,7 +45,7 @@
 					if(typeof q === "string" && q.startsWith("?")) {
 						q = new URLSearchParams(q);
 						var s = q.get("server");
-						if(s) window.eaglercraftXOpts.joinServer = s;
+						if(s) window.sachécraftXOpts.joinServer = s;
 					}
 					
 					main();
